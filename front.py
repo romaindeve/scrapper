@@ -9,7 +9,7 @@ default_text = "Paste the url of the website you want to scrap"
 st.title('Online scrapper')
 
 st.session_state['url'] = st.text_area(
-        "Entrez un extrait d'article de journal", value=default_text)
+        "Entrez un url", value=default_text)
 
 if st.session_state['url'] != default_text and len(st.session_state['url']) > 0 :
     article = Article(st.session_state['url'])
