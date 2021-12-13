@@ -16,5 +16,5 @@ if st.session_state['url'] != default_text and len(st.session_state['url']) > 0 
     article.download()
     article.parse()
     st.write(f"## {article.title}")
-    st.write(f"_{article.author}_")
+    st.write(f"_Authors : {article.authors}_")
     st.write(f"{article.text}")
